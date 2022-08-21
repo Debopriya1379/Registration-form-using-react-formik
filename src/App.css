@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.required {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App header {
+  width: 100%;
+  height: 80px;
+  background-color: #2fb3f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App input {
+  padding: 0 1em;
+  margin: 0 1em;
+  height: 1.5rem;
+  background-color: #E7E9EB;
+  border: .5px solid #858586;
+  border-radius: 3px;
+  outline: none;
+}
+
+.App h4 {
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  /* position:relative; */
+  /* right: 20rem; */
+}
+
+.all_users {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 1rem;
+  margin: 4rem 0;
+  padding: 0 1rem;
+}
+
+.User_component {
+  width: 100%;
+  /* height: 60px; */
+  border: 1px solid black;
+  padding: .2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: .2em;
+}
+
+.form_container {
+  width: 70%;
+  padding: 1rem 0;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  background-color: #E7E9EB;
+}
+
+.App .personal_details, .contact_details, .address_details, .other_details {
+  width: 95%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+
+.special_class {
+  display: flex;
+  gap: .3rem;
+}
+
+.submission {
+  width: 92%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+button {
+  padding: .4rem 1.3rem;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn_green {
   color: white;
+  border: 2px solid rgb(19, 101, 19);;
+  background-color: rgb(28, 157, 28);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn_red {
+  color: white;
+  border: 2px solid rgb(152, 15, 15);;
+  background-color: rgb(223, 45, 45);
 }
